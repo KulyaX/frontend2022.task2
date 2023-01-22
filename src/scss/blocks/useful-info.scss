@@ -1,0 +1,129 @@
+.useful-info {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    grid-column-gap: 21px;
+    height: auto;
+
+
+     @include media-md-max {
+        grid-template-columns: repeat(1, minmax(0, 1fr));
+        grid-row-gap: 10px;
+        grid-column-gap: 0px;
+     }
+}
+
+.side-panel {
+    grid-column: 1/2;
+    background: #FCFFE7;
+    border: 1px solid #000000;
+    padding: 30px;
+
+    @include media-xl-max{
+        padding: 28px;
+    }
+    @include media-lg-max{
+        padding: 24px;
+    }
+    @include media-md-max{
+        grid-column: none;
+        padding: 20px;
+    }
+    @include media-sm-max{
+        padding: 15px;
+    }
+}
+
+.side-panel__header {
+    font-weight: 500;
+    font-size: 20px;
+    margin-bottom: 16px;
+
+    @include media-md-max{
+        font-size: 18px;
+        margin-bottom: 13px;
+    }
+    @include media-sm-max{
+        font-size: 16px;
+    }
+}
+
+.side-panel__list {
+    list-style: inside;
+    list-style-type:disc;
+    font-weight: 400;
+    font-size: 16px;
+    @include media-lg-max{
+        font-size: 14px;
+    }
+}
+
+.side-panel__item {
+    font-weight: 400;
+    font-size: 16px;
+}
+
+.last-info {
+    grid-column: 2/4;
+    border: 1px solid #000000;
+    background: #FFFFFF;
+    padding: 30px 32px;
+
+    @include media-xl-max{
+        padding: 28px;
+    }
+    @include media-lg-max{
+        padding: 24px;
+    }
+    @include media-md-max{
+        grid-column: none;
+        padding: 20px;
+    }
+    @include media-sm-max{
+        padding: 15px;
+    }
+}
+
+.last-info__header {
+    font-weight: 700;
+    font-size: 23px;
+    margin-bottom: 26px;
+
+    @include media-lg-max{
+        font-size: 20px;
+    }
+    @include media-md-max{
+        font-size: 18px;
+        margin-bottom: 13px;
+    }
+    @include media-sm-max{
+        font-size: 16px;
+    }
+}
+
+.last-info__unit {
+    margin-bottom: 20px;
+}
+
+.unit__header {
+    font-weight: 400;
+    font-size: 24px;
+    margin-bottom: 15px;
+    @include media-lg-max{
+        font-size: 20px;
+    }
+    @include media-md-max{
+        font-size: 18px;
+        margin-bottom: 13px;
+    }
+    @include media-sm-max{
+        font-size: 16px;
+    }
+}
+
+.unit__text {
+    font-weight: 400;
+    font-size: 16px;
+    @include media-lg-max{
+        font-size: 14px;
+    }
+}

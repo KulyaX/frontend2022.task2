@@ -1,0 +1,21 @@
+.change-view{
+    display: flex;
+    width: 100%;
+    gap: 15px;
+    justify-content: center;
+    margin-bottom: 10px;
+    font-size: 30px;
+    @include media-md-max{
+        display: none;
+    }
+}
+
+.view__button{
+    width: 30px;
+    height: 30px;
+    border: none;
+}
+
+.view__button--active{
+    color: red;
+}

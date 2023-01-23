@@ -1,0 +1,90 @@
+.ikit-logo {
+    width: 200px;
+    margin-right: 30px;
+    @include media-md-max{
+        display: none;
+    }
+}
+
+.avatar__img {
+    background-color: #ffffff;
+    border-radius: 16px;
+}
+
+.avatar__profile {
+    font-weight: 400;
+    font-size: 15px;
+    color: #F5F5F5;
+    @include media-xl-max{
+        display: none;
+    }
+}
+
+.header__content {
+    height: 60px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header__leading-content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.header__trailing-content {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    height: 80px;
+    gap: 16px;
+}
+
+.nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.nav__menu {
+    display: flex;
+    flex-direction: row;
+    flex-flow: nowrap;
+    align-items: center;
+    justify-content: center;
+    @include media-md-max{
+        display: none;
+        gap: 0px;
+    }
+}
+
+.nav__item{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    overflow: hidden;
+    margin: 0px 10px 0px 0px;
+    padding: 8px 12px;
+}
+
+.nav__item a{
+    color: #D1D5DB;
+    text-decoration: none;
+    font-weight: 500;
+}
+
+.nav__item--active {
+    background-color: #111827;
+    border-radius: 6px;
+}
+
+.nav__item:hover {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 0px 10px 0px 0px;
+    padding: 8px 12px;
+    background-color: #111827;
+    border-radius: 6px;
+}

@@ -1,0 +1,19 @@
+.form__inputs{
+    display: flex;
+    flex-direction: column;
+}
+.form{
+    display: none;
+    max-width: 800px;
+    flex: 1 1 auto;
+    justify-content:center;
+    flex-direction: column;
+    font-weight: 400;
+    font-size: 18px;
+}
+.form__buttons{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-top: 20px;
+}

@@ -45,6 +45,15 @@
             <h3 class="personal-page__second-heading">Полезная информация</h3>
             <section class="useful-info">
                 <section class="side-panel">
+                    <div class="side-panel__search">
+                        <div class="side-panel__wrapper">
+                            <input id="side-panel__input" type="text" />
+                        </div>
+                        <div class="side-panel__button">
+                            <button id="side-panel__search-button" >Поиск</button>
+                        </div>
+                        
+                    </div>
                     <h4 class="side-panel__header">Заголовок</h4>
                     <ul class="side-panel__list">
                         <li class="side-panel__item">Список 1</li>
@@ -80,6 +89,27 @@
             <section class="interesting-article">
                 <header class="interesting-article__heading">
                     <h3 class="interesting-article__header">Интересные статьи</h3>
+                    <div class="change-view">
+                        <button class="view__button" id="view__list-button">
+                            <svg  viewBox="0 0 25 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M8.5 6H21.5" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path d="M8.5 12H21.5" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path d="M8.5 18H21.5" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path d="M3.5 6H3.51" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path d="M3.5 12H3.51" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path d="M3.5 18H3.51" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                        </button>
+                        <button class="view__button view__button--active" id="view__grid-button">
+                            <svg viewBox="0 0 25 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M10.5 3H3.5V10H10.5V3Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path d="M21.5 3H14.5V10H21.5V3Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path d="M21.5 14H14.5V21H21.5V14Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path d="M10.5 14H3.5V21H10.5V14Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                        </button>
+                    </div>
+                    <!--Не получается убрать обводку у кнопок. Стили не применяются-->
                     <p class="interesting-article__supporting-header">Последние новости из мира IT-технологий</p>
                 </header>
                 <div class="posts">
@@ -131,6 +161,51 @@
                             <div class="blog__date">17 окт 2022 • 11 мин чтения</div>
                         </div>
                     </div>
+                </div>
+                <div class="blog-add">
+                    <div class="blog-add__button">
+                        <button class="blog-add__button-add" id="blog-add__button">Добавить</button>
+                    </div>
+                    <form class="blog-add__form form" onsubmit="return false;">
+                        <div class="form__inputs">
+                            <label for="blog-text__name" >Название статьи</label>
+                            <input type="text" class="blog-text-name" id="blog-text-name">
+                            <label for="blog-text__url" >Ссылка на картинку</label>
+                            <input type="text" class="blog-text-url" id="blog-text-url">
+                            <label for="blog-text-description" >Описание</label>
+                            <textarea  class="blog-text__description" id="blog-text-description"></textarea>
+                            <div class="form__buttons">
+                                <button type="reset" class="blog-add__button-cancel" id="blog-add__button-cancel">Отмена</button>
+                                <button type="submit" class="blog-add__button-create" id="blog-add__button-create">Создать</button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+                <div class="faq" id="faq">
+                    <h3 class="faq-title">FAQ</h2>
+                    <dl class="faq-page">
+                        <dt class="faq-page__question">Lorem ipsum dolor sit amet, consectetur adipiscing elit?</dt>
+                        <dd class="faq-page__answer">Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
+                            sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim 
+                            ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip 
+                            ex ea commodo consequat.
+                        </dd>
+            
+                        <dt class="faq-page__question">Lorem ipsum dolor sit amet, consectetur adipiscing elit?</dt>
+                        <dd class="faq-page__answer">Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
+                                sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim 
+                                ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip 
+                                ex ea commodo consequat.
+                        </dd>
+
+                        <dt class="faq-page__question">Lorem ipsum dolor sit amet, consectetur adipiscing elit?</dt>
+                        <dd class="faq-page__answer">Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
+                                sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim 
+                                ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip 
+                                ex ea commodo consequat.
+                        </dd>
+                            
+                    </dl>
                 </div>
             </section>
         </div>
